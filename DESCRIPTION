@@ -1,0 +1,13 @@
+Package: level0
+Type: Package
+Title: Error Checking and Analysis of eScholar Extracts
+Version: 0.1.0
+Authors@R: c(
+    person("Paul", "de Barros", email = "pj.debarros@gmail.com", role = c("aut", "cre")),
+    person("Alan", "Thorne", email = "abthornejr@gmail.com", role = "aut"))
+Description: I will fill this is later
+License: GPL-3
+Imports:
+    dBtools,
+    openxlsx
+LazyData: true
