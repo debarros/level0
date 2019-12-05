@@ -1,11 +1,6 @@
-# StudentLite.R
+# StudentLite_SingleCol.R
 
-studlite = read.csv(file.choose(), stringsAsFactors = F)
-  templates = openxlsx::loadWorkbook(file.choose())
-
-  str(studlite)
-StudentLite = function(studlite, templates){
-  colnames(studlite) = dBtools::GetNiceColumnNames("STUDENT LITE", templates)
+StudentLite_SingleCol = function(){
   # Check for missing values
   # # district code
   # # location code
@@ -60,15 +55,4 @@ StudentLite = function(studlite, templates){
   # # Neglected y or n, blanks become n
   # # Career path code in table
   # #
-
-
-  # Comparing columns
-  # # No duplicate races for one student
-  # # last status date in current school year (usuing school year column)
-  # # diploma type and career path either both exist, or neither exists
-  # # Date of entry in grade 9 must be a valid date if grade level in 9:12, cannot exceed the school year, cannot preceed dob
-  # # guidance counselor district code must be blank or equal district code column
-
-
-
 }
